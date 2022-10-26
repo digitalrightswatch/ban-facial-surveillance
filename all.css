@@ -356,6 +356,8 @@ a{
 }
 .link-company-style{
 	font-family:"Folsom-Black";
+	text-decoration:none;
+	text-transform:none;
 }
 .nav-text-underline{
 	text-decoration:underline!important;
@@ -369,6 +371,11 @@ h4{
 }
 .img-style{
 	height:160px;
+}
+.no-underline{
+	text-decoration:none;
+	font-family:"Folsom-Black";
+	text-transform:none;
 }
 
 /* = Colour
