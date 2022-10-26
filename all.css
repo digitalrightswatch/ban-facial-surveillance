@@ -20,13 +20,6 @@ body{
 a,button{transition: background .3s ease-in-out;outline: none!important;} /* Prevent blue selection glow on Chrome and Safari */
 a:hover{text-decoration: none; cursor:pointer;}
 
-
-/* Preloader */
-
-.page-preloader{position: fixed;top: 0;bottom: 0;width: 100%;z-index:100000;background:#FFFFFF url("img/pageload-spinner.gif") no-repeat center center;animation-name: preloader-fade;animation-delay: 2s;animation-duration: 0.5s;animation-fill-mode: both;}
-.preloader-complete{animation-delay:0.1s;}
-@keyframes preloader-fade {0% {opacity: 1;visibility: visible;}100% {opacity: 0;visibility: hidden;}}
-
 /* = Web Fonts
 -------------------------------------------------------------- */
 
@@ -86,6 +79,9 @@ a:hover{text-decoration: none; cursor:pointer;}
 
 /* Sizes */
 
+.bloc-lg{
+	padding:100px 20px;
+}
 .bloc-md{
 	padding:50px 20px;
 }
@@ -203,6 +199,18 @@ a:hover{text-decoration: none; cursor:pointer;}
 	margin-top:10px;
 	margin-bottom:20px;
 }
+img.mg-sm,img.mg-md,img.mg-lg{
+	margin-top: 0;
+}
+img.mg-sm{
+	margin-bottom:10px;
+}
+img.mg-md{
+	margin-bottom:30px;
+}
+img.mg-lg{
+	margin-bottom:50px;
+}
 
 /* = Buttons
 -------------------------------------------------------------- */
@@ -318,7 +326,7 @@ p{
 a{
 	color:#FFFFFF!important;
 	font-family:"KatwijkMono-Regular";
-	text-decoration:none;
+	text-decoration:underline!important;
 }
 .link-style{
 	font-weight:bold;
@@ -334,6 +342,33 @@ a{
 }
 .can_embed #can_embed_form h4{
 	display:none;
+}
+.footer-heading{
+	font-size:200%;
+	font-family:"Folsom-Black";
+	color:#000000!important;
+}
+.text-black{
+	color:#000000!important;
+}
+.transform-caps{
+	text-transform:uppercase;
+}
+.link-company-style{
+	font-family:"Folsom-Black";
+}
+.nav-text-underline{
+	text-decoration:underline!important;
+}
+h4{
+	font-family:"KatwijkMono-Regular";
+	color:#FFFFFF!important;
+	font-size:120%;
+	text-decoration:underline!important;
+	text-transform:uppercase;
+}
+.img-style{
+	height:160px;
 }
 
 /* = Colour
@@ -470,10 +505,12 @@ a{
 	h3{
 		font-size:120%;
 	}
+	.link-company-style{
+		font-size:100%;
+	}
 	
 }
 
-}
 /* Button Background Color */
 .can_embed .can_button,
 .can_embed #can_embed_form input[type="submit"],
@@ -481,6 +518,7 @@ a{
 .can_embed #donate_auto_modal input[type="submit"],
 .can_embed #donate_auto_modal .button {
 	background-color: #FCFB00 !important;
+	color: #000000 !important;
 }
 
 /* Button Background Color on Hover */
